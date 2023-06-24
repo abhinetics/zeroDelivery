@@ -42,13 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let totaldosa = dosaQty * 50;
     let Usertotal = totalsandwich + totalpizza + totalsamosa + totaldosa;
 
-    if (regNo === "" || hostelNo === "" || roomNo === "") {
+    if (regNo === "" || hostelNo === "" || roomNo === "" || name === "" || phone === "") {
       alert("Please enter all the details");
       return;
     }
 
     // Check if no items are entered
-    if (message === `Registration No.: ${regNo}%0AHostel No.: ${hostelNo}%0ARoom No.: ${roomNo} %0AName: ${name} %0APhone: ${phone}`) {
+if (message === `Registration No.: ${regNo}%0AHostel No.: ${hostelNo}%0ARoom No.: ${roomNo} %0AName: ${name} %0APhone: ${phone} `) {
       alert("Please enter at least one item");
       return;
     }
