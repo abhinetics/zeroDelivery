@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
     // Construct the WhatsApp link with the message
-    const link = `https://wa.me/8789465702?text=${message}`;
+    const link = `https://wa.me/+91 8789465702?text=${message}`;
     console.log(message);
 
    // Open the URL in a new window
