@@ -10,7 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const phone = document.getElementById('mob').value;
     let message = `Registration No.: ${regNo}%0AHostel No.: ${hostelNo}%0ARoom No.: ${roomNo} %0AName: ${name} %0APhone: ${phone}`;
     let total = 0;
-
+    if(hostelNo === "none"){
+      alert("Choose your Hostel No.");
+      return;
+    }
     // Add items if quantities are entered
     const sandwichQty = document.getElementById('qty1').value;
     if (sandwichQty > 0) {
