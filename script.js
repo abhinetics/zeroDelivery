@@ -62,8 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Construct the WhatsApp link with the message
     const link = `https://wa.me/8789465702?text=${message}`;
     console.log(message);
-    //payment
-    const url = `phonepe://pay?amount=${amount}`;
 
    // Open the URL in a new window
   //  setTimeout(function(){ window.open(url); }, 3000);
