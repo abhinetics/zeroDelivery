@@ -41,6 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let totalsamosa = samosaQty * 10;
     let totaldosa = dosaQty * 50;
     let Usertotal = totalsandwich + totalpizza + totalsamosa + totaldosa;
+    if(Usertotal === 0){
+      alert("Please Choose atleast one Dish");
+      return;
+    }
 
     if (regNo === "" || hostelNo === "" || roomNo === "" || name === "" || phone === "") {
       alert("Please enter all the details");
