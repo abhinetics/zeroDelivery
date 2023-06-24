@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const regNo = document.getElementById('reg').value;
     const hostelNo = document.getElementById('bh').value;
     const roomNo = document.getElementById('room').value;
-    let message = `Registration No.: ${regNo}%0AHostel No.: ${hostelNo}%0ARoom No.: ${roomNo}`;
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('mob').value;
+    let message = `Registration No.: ${regNo}%0AHostel No.: ${hostelNo}%0ARoom No.: ${roomNo} %0AName: ${name} %0APhone: ${phone}`;
     let total = 0;
 
     // Add items if quantities are entered
@@ -43,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Check if no items are entered
-    if (message === `Registration No.: ${regNo}%0AHostel No.: ${hostelNo}%0ARoom No.: ${roomNo}`) {
+    if (message === `Registration No.: ${regNo}%0AHostel No.: ${hostelNo}%0ARoom No.: ${roomNo} %0AName: ${name} %0APhone: ${phone}`) {
       alert("Please enter at least one item");
       return;
     }
@@ -70,3 +72,67 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open(link);
   });
 });
+
+
+function increaseValue() {
+  var value = parseInt(document.getElementById('qty1').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('qty1').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('qty1').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('qty1').value = value;
+}
+
+
+function increaseValue2() {
+  var value = parseInt(document.getElementById('qty2').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('qty2').value = value;
+}
+
+function decreaseValue2() {
+  var value = parseInt(document.getElementById('qty2').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('qty2').value = value;
+}
+
+
+function increaseValue3() {
+  var value = parseInt(document.getElementById('qty3').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('qty3').value = value;
+}
+
+function decreaseValue3() {
+  var value = parseInt(document.getElementById('qty3').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('qty3').value = value;
+}
+
+
+function increaseValue4() {
+  var value = parseInt(document.getElementById('qty4').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('qty4').value = value;
+}
+
+function decreaseValue4() {
+  var value = parseInt(document.getElementById('qty4').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('qty4').value = value;
+}

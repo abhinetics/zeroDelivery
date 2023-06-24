@@ -15,6 +15,16 @@
         <div class="reg"> Registration No. =
         <input type="number" name="reg" id="reg" placeholder="12345678" >
         </div>
+        <div class="mob" >
+            Mobile No. =
+            <input type="number" name="mob" id="mob" placeholder="9876543210" >
+        </div>
+
+        <div class="name">
+            Name =
+            <input type="text" name="name" id="name" placeholder="Enter your Name" >
+
+        </div>
 
         <div class="bh">
             Hostel No. = 
@@ -42,8 +52,14 @@
                 Sandwich
                 <br>
                 Rs.70</span>
-            <span class="qty">Qty. = 
-                <input type="number" name="qty" id="qty1" placeholder="Enter Quantity" >
+            <span class="qty">
+                <!-- a button to increase or decrease quantity -->
+                <form>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="qty1" class="incdecbtn" value="0" />
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                  </form>
+                <!-- <input type="number" name="qty" id="qty1" placeholder="Enter Quantity" > -->
             </span>
         </div>
         <div class="item2">
@@ -54,8 +70,13 @@
                 Pizza
                 <br>
                 Rs.160</span>
-            <span class="qty">Qty. = 
-                <input type="number" name="qty" id="qty2" placeholder="Enter Quantity" >
+            <span class="qty">
+                <form>
+                    <div class="value-button" id="decrease" onclick="decreaseValue2()" value="Decrease Value">-</div>
+                    <input type="number" id="qty2" class="incdecbtn" value="0" />
+                    <div class="value-button" id="increase" onclick="increaseValue2()" value="Increase Value">+</div>
+                  </form>
+                <!-- <input type="number" name="qty" id="qty2" placeholder="Enter Quantity" > -->
             </span>
         </div>
         <div class="item3">
@@ -66,8 +87,13 @@
                 Samosa
                 <br>
                 Rs.10</span>
-            <span class="qty">Qty. = 
-                <input type="number" name="qty" id="qty3" placeholder="Enter Quantity" >
+            <span class="qty">
+                <form>
+                    <div class="value-button" id="decrease" onclick="decreaseValue3()" value="Decrease Value">-</div>
+                    <input type="number" id="qty3" class="incdecbtn" value="0" />
+                    <div class="value-button" id="increase" onclick="increaseValue3()" value="Increase Value">+</div>
+                  </form>
+                <!-- <input type="number" name="qty" id="qty3" placeholder="Enter Quantity" > -->
             </span>
         </div>
         <div class="item4">
@@ -78,8 +104,13 @@
                 Dosa
                 <br>
                 Rs.50</span>
-            <span class="qty">Qty. = 
-                <input type="number" name="qty" id="qty4" placeholder="Enter Quantity" >
+            <span class="qty">
+                <form>
+                    <div class="value-button" id="decrease" onclick="decreaseValue4()" value="Decrease Value">-</div>
+                    <input type="number" id="qty4" class="incdecbtn" value="0" />
+                    <div class="value-button" id="increase" onclick="increaseValue4()" value="Increase Value">+</div>
+                  </form>
+                <!-- <input type="number" name="qty" id="qty4" placeholder="Enter Quantity" > -->
             </span>
         </div>
         <button class="btn-4" id="submitbtn" >Place Order</button>
